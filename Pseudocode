@@ -1,4 +1,4 @@
-import java.util.Scanner;
+Import java.util.Scanner;
 
 public class FloatingPointStats {
     public static void main(String[] args) {
