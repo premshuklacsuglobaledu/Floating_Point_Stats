@@ -1,0 +1,34 @@
+BEGIN
+    Initialize count = 0
+    Initialize total = 0.0
+    Initialize max = -infinity
+    Initialize min = infinity
+    Initialize interestRate = 0.20
+
+    WHILE count < 5 DO
+        Prompt user to enter a floating-point number
+        Read value from user
+
+        IF value is valid THEN
+            total = total + value
+            IF value > max THEN
+                max = value
+            ENDIF
+            IF value < min THEN
+                min = value
+            ENDIF
+            count = count + 1
+        ELSE
+            Display "Enter a number."
+        ENDIF
+    ENDWHILE
+
+    average = total / 5
+    interest = total * interestRate
+
+    Display "Total: ", total
+    Display "Average: ", average
+    Display "Maximum: ", max
+    Display "Minimum: ", min
+    Display "Interest at 20%: ", interest
+END
